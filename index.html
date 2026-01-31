@@ -3,33 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Sites Here</title>
+    <title>Quick Sites Here | Professional Websites Fast</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f4; }
-        .container { background: white; padding: 40px; border-radius: 20px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        h1 { color: #10b981; }
-        .btn { 
-            display: inline-block; 
-            background: #1f2937; 
-            color: white; 
-            padding: 20px 40px; 
-            text-decoration: none; 
-            border-radius: 10px; 
-            font-weight: bold; 
+        :root {
+            --primary: #10b981; /* Fresh Green */
+            --dark: #1f2937;    /* Charcoal */
+            --light: #f9fafb;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, #111827 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -2px;
+        }
+
+        header span {
+            color: var(--primary);
+        }
+
+        header p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 20px auto;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1100px;
+            margin: -60px auto 60px;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: var(--dark);
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Call to Action */
+        .cta-box {
+            background: var(--primary);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.25);
+        }
+
+        .cta-box h2 {
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: var(--dark);
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.2s;
             margin-top: 20px;
+        }
+
+        .email-link:hover {
+            transform: scale(1.05);
+            background: #000000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.5rem; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Quick Sites Here</h1>
-        <p>Cheap and professional websites, delivered fast.</p>
-        
-        <a href="mailto:quicksiteshere@gmail.com" target="_blank" class="btn">
-            Get My Website Now
-        </a>
-    </div>
+    <header>
+        <h1>Quick Sites <span>Here</span></h1>
+        <p>Premium website design for businesses that need to launch yesterday. High quality, low cost, zero stress.</p>
+    </header>
+
+    <main>
+        <div class="grid">
+            <div class="card">
+                <span class="icon">🚀</span>
+                <h3>Instant Launch</h3>
+                <p>We specialize in getting you live within 48-72 hours. Perfect for startups and local businesses.</p>
+            </div>
+            <div class="card">
+                <span class="icon">💎</span>
+                <h3>Clean Design</h3>
+                <p>No clutter. We build sleek, modern layouts that make your brand look like a million bucks.</p>
+            </div>
+            <div class="card">
+                <span class="icon">📈</span>
+                <h3>SEO Ready</h3>
+                <p>All our "Quick Sites" are built with Google in mind, helping customers find you faster.</p>
+            </div>
+        </div>
+
+        <section class="cta-box">
+            <h2>Get Started Today</h2>
+            <p>Ready for your new website? Click the button below to send us an inquiry.</p>
+            <a href="mailto:QuickSitesHere@gmail.com?subject=New Website Inquiry" class="email-link">
+                Email QuickSitesHere@gmail.com
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Quick Sites Here. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
